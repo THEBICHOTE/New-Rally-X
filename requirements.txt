@@ -1,0 +1,5 @@
+pygame
+constantes 
+jugador
+behavior_tree
+algoritmolastar

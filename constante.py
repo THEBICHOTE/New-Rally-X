@@ -1,0 +1,17 @@
+#configuracion de pantalla 
+WIDTH, HEIGHT= 800, 600
+FPS= 60
+
+#Colores
+BLACK= (0, 0, 0)
+WHITE= (255, 255, 255)
+RED= (255, 50, 50)
+GREEN= (50, 200, 50)
+BLUE= (50, 150, 255)
+YELLOW= (255, 255, 100)
+GRAY= (100, 100, 100)
+LIGHT_GREEN= (100, 255, 100)
+LIGHT_RED= (255, 100, 100)
+DARK_GREEN= (0, 100, 0)
+DARK_RED= (150, 0  ,0)
+PULPLE= (180, 70, 220)
