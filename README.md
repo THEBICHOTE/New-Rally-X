@@ -11,11 +11,8 @@ Un remaker del juego New Rally X con enemigos
 que estan controlado con el arbol de comportamiento 
 y el a*
 
-![Captura de pantalla del juego](screenshot/screendeljuego.jpg)
+![Captura de pantalla del juego](screenshot/capturadeljuego.jpg)
 
-
-
-![Captura de pantalla del juego](screenshot/Capturadeljuego.jpg)
 
 # Caracteristicas
 - el juego se puede manejar por teclado y por joystick
