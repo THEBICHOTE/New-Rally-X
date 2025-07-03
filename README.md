@@ -8,7 +8,10 @@ Wilbel Benitez
 New Rally X
 
 Un remaker del juego New Rally X con enemigos
-que estan controlado con el arbol de comportamiento y el a*
+que estan controlado con el arbol de comportamiento 
+y el a*
+
+![Captura de pantalla del juego](screenshot/screendeljuego.jpg), (screenshot/Captura del juego.jpg)
 
 # Caracteristicas
 - el juego se puede manejar por teclado y por joystick
@@ -38,6 +41,7 @@ Teclado
 - +/-: Ajustar volumen
 
  Joystick
+
 - Analógico izquierdo/D-Pad: Mover
 
 - Botón A: Soltar humo
