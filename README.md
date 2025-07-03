@@ -12,6 +12,9 @@ que estan controlado con el arbol de comportamiento
 y el a*
 
 ![Captura de pantalla del juego](screenshot/screendeljuego.jpg)
+
+
+
 ![Captura de pantalla del juego](screenshot/Capturadeljuego.jpg)
 
 # Caracteristicas
