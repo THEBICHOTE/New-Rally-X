@@ -1,5 +1,2 @@
-pygame
-constantes 
-jugador
-behavior_tree
-algoritmolastar
+- Python 3.8+
+- Pygame 2.5+
