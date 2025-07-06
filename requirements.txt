@@ -1,2 +1,4 @@
-- Python 3.8+
-- Pygame 2.5+
+- Python 
+- Pygame 
+- random
+- math

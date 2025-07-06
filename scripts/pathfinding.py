@@ -1,9 +1,11 @@
+#Wilbel Benitez
+#22-SISN-2-064
 def heuristic(a, b):
-    """Función heurística (distancia Manhattan)"""
+    #Función heurística (distancia Manhattan)
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
 def a_star(start, end, maze):
-    """Implementación del algoritmo A* para encontrar camino"""
+    #Implementación del algoritmo A* para encontrar camino
     
     # Convertir coordenadas a celdas
     start_cell = (int(start[0] // maze.cell_size), int(start[1] // maze.cell_size))

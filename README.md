@@ -24,6 +24,8 @@ y el a*
 # Requistos 
 python
 pygame 
+random
+math
 
 # Controles 
 Teclado

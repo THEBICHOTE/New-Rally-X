@@ -1,12 +1,14 @@
+#Wilbel Benitez
+#22-SISN-2-064
 import random
 
 class Node:
-    """Nodo base del árbol de comportamiento"""
+    #Nodo base del árbol de comportamiento"""
     def execute(self, enemy, game):
         return True
 
 class Sequence(Node):
-    """Ejecuta nodos en secuencia hasta que uno falle"""
+   #Ejecuta nodos en secuencia hasta que uno falle"""
     def __init__(self, nodes):
         self.nodes = nodes
     
@@ -17,7 +19,7 @@ class Sequence(Node):
         return True
 
 class Selector(Node):
-    """Ejecuta nodos hasta que uno tenga éxito"""
+    #Ejecuta nodos hasta que uno tenga éxito
     def __init__(self, nodes):
         self.nodes = nodes
     
@@ -28,7 +30,7 @@ class Selector(Node):
         return False
 
 class Condition(Node):
-    """Condición base"""
+    #Condición base
     def __init__(self, func):
         self.func = func
     
@@ -36,7 +38,7 @@ class Condition(Node):
         return self.func(enemy, game)
 
 class Action(Node):
-    """Acción base"""
+    #Acción base
     def __init__(self, func):
         self.func = func
     
@@ -44,11 +46,11 @@ class Action(Node):
         return self.func(enemy, game)
 
 def create_enemy_behavior_tree():
-    """Crea el árbol de comportamiento para los enemigos"""
+    #Crea el árbol de comportamiento para los enemigos
     
     # Condiciones
     def is_player_visible(enemy, game):
-        """Verifica si el jugador está visible"""
+       #Verifica si el jugador está visible
         # Calcular distancia al jugador
         dx = enemy.x - game.player.x
         dy = enemy.y - game.player.y
@@ -80,19 +82,19 @@ def create_enemy_behavior_tree():
         return True
     
     def is_player_near(enemy, game):
-        """Verifica si el jugador está cerca"""
+       #Verifica si el jugador está cerca
         dx = enemy.x - game.player.x
         dy = enemy.y - game.player.y
         dist = dx*dx + dy*dy
         return dist < 150000  # ~387 píxeles
     
     def has_path_to_player(enemy, game):
-        """Verifica si hay un camino al jugador"""
+        #Verifica si hay un camino al jugador
         return len(enemy.path) > 0
     
     # Acciones
     def chase_player(enemy, game):
-        """Perseguir al jugador"""
+        #Perseguir al jugador
         if not enemy.path:
             return False
             
@@ -129,7 +131,7 @@ def create_enemy_behavior_tree():
         return True
     
     def patrol_randomly(enemy, game):
-        """Patrullar aleatoriamente"""
+        #Patrullar aleatoriamente
         # Si no hay camino o se llegó al destino, elegir nuevo destino
         if not enemy.path or ((enemy.x - enemy.target_x)**2 + (enemy.y - enemy.target_y)**2 < 25):
             # Buscar posición aleatoria válida
@@ -146,7 +148,7 @@ def create_enemy_behavior_tree():
         return False
     
     def find_player_path(enemy, game):
-        """Buscar camino al jugador"""
+        #Buscar camino al jugador
         enemy.target_x = game.player.x
         enemy.target_y = game.player.y
         enemy.find_path(game.maze)
